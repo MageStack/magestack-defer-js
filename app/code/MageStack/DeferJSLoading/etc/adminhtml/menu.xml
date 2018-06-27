@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright 2018 MageStack. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+		<add id="MageStack_DeferJSLoading::deferjs_setting" title="Defer JS Loading" module="MageStack_DeferJSLoading" sortOrder="30"
+		   parent="MageStack_AdminMageStack::marketing_social" resource="MageStack_DeferJSLoading::deferjs_setting"/>
+        <add id="MageStack_DeferJSLoading::deferjs_setting_area" title="Settings" module="MageStack_DeferJSLoading" sortOrder="10"
+            parent="MageStack_DeferJSLoading::deferjs_setting" action="adminhtml/system_config/edit/section/magestack_deferjs" resource="MageStack_DeferJSLoading::config_magestack_deferjs"/>
+    </menu>
+</config>
